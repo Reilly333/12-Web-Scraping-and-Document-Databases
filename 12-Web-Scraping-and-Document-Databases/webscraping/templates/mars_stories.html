@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Mars Data</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script> 
+</head>
+
+<body>
+    <div class="container">
+        <div class="jumbotron">
+            <h1 align="center">Mission to Mars</h1>
+            
+        </div>
+        <div class="page-header">
+            <h1 style="padding-left:15px"> Mars Stories:</h1>
+			<p align="Center">
+               <p align="Center">
+                <a class="btn btn-primary btn-lg" href="/scrape" role="button">Scrape new Mars data here</a>
+            </p>		
+        </div>
+		<ul>
+		  <li><a href="/mars_stories">Mars Stories.</a></li>
+		  <li><a href="/weather_tweets">Mars Weather.</a></li>
+		  <li><a href="/mars_space_facts">Mars Facts.</a></li>
+		  <li><a href="/mars_hi_res_mars_images">Mars Images.</a></li>
+		</ul>
+</div>  
+
+        {% for data in mars_stories %} 
+        <div class="container-fluid">
+            <h2>{{ data.title }}</h2>
+            <p>{{ data.body }}</p>
+        </div>
+		{% endfor %}   
+</body>
+</body>
+
+</html>
