@@ -5,7 +5,7 @@ certifi==2019.6.16
 chardet==3.0.4
 idna==2.8
 lxml==4.4.1
-numpy==1.16.4
+numpy==1.22.0
 pandas==0.24.2
 progressbar2==3.42.0
 python-dateutil==2.8.0
